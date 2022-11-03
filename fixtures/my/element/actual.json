@@ -1,36 +1,38 @@
 {
-  "schemaVersion": "0.1.0",
+  "schemaVersion": "1.0.0",
   "readme": "",
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "my-element.js",
+      "path": "my/element",
       "declarations": [
         {
           "kind": "class",
           "description": "",
           "name": "MyElement",
-          "members": [
-            {
-              "kind": "field",
-              "name": "someField",
-              "default": "",
-              "foo": "Some custom information!"
-            }
-          ],
           "superclass": {
-            "name": "HTMLElement"
+            "name": "LightningElement",
+            "package": "lwc"
           },
+          "tagName": "my-element",
           "customElement": true
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "MyElement",
+          "name": "default",
           "declaration": {
             "name": "MyElement",
-            "module": "my-element.js"
+            "module": "my/element"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "my-element",
+          "declaration": {
+            "name": "MyElement",
+            "module": "my/element"
           }
         }
       ]
