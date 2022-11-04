@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "my/events",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Events",
+          "events": [
+            {
+              "name": "sample",
+              "type": {
+                "text": "CustomEvent"
+              }
+            }
+          ],
+          "superclass": {
+            "name": "LightningElement",
+            "package": "lwc"
+          },
+          "tagName": "my-events",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "Events",
+            "module": "my/events"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "my-events",
+          "declaration": {
+            "name": "Events",
+            "module": "my/events"
+          }
+        }
+      ]
+    }
+  ]
+}

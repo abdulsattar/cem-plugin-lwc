@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "my/props",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Props",
+          "members": [
+            {
+              "kind": "field",
+              "name": "name"
+            }
+          ],
+          "superclass": {
+            "name": "LightningElement",
+            "package": "lwc"
+          },
+          "tagName": "my-props",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "Props",
+            "module": "my/props"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "my-props",
+          "declaration": {
+            "name": "Props",
+            "module": "my/props"
+          }
+        }
+      ]
+    }
+  ]
+}
